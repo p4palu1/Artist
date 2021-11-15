@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+.mt-5 {
+  font-family: "Heebo";
+  text-align: right;
+  direction: rtl;
+}

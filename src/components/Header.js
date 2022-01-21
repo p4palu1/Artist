@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, Container} from 'react-bootstrap'
 import { withRouter } from 'react-router-dom'; 
 import { Route } from "react-router-dom"
 import "../css/Header.css"
@@ -33,7 +33,7 @@ const Header = ({history}) => {
                                         <i className=""></i> 
                                         <span>ציורי גוף</span>
                                     </Nav.Link>
-                                    <Nav.Link href="/bio">
+                                    <Nav.Link href="/repertoire">
                                         <i className=""></i> 
                                         <span>שיחות עם יוסף רולס</span>
                                     </Nav.Link>

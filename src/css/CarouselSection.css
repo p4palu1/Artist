@@ -1,0 +1,13 @@
+.carousel-inner {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next {
+  display: none;
+}

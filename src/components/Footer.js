@@ -63,7 +63,7 @@ const Footer = () => {
 
 
   <div className="text-center p-4 " style={{direction: 'rtl' ,backgroundColor: "rgba(0, 0, 0, 0.05)"}}>
-      כל הזכויות שמורות ל-NEWGENMEDIA ©
+      כל הזכויות שמורות ליוסף רולס ©
   </div>
 </footer>
     )

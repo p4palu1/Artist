@@ -11,7 +11,6 @@ video {
 .hero-container {
   font-family: "Assistant";
   letter-spacing: 10px;
-  background: url("./pics/0D6A9994.jpg") center center/cover no-repeat;
   height: 90vh;
   width: 100%;
   display: flex;

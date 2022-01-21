@@ -19,11 +19,23 @@ const Header = ({history}) => {
                                 <>
                                     <Nav.Link href="/bio">
                                         <i className=""></i> 
-                                        <span>קצת עליי</span>
+                                        <span>ביוגרפיה</span>
                                     </Nav.Link>
                                     <Nav.Link href="/repertoire">
                                         <i className=""></i> 
-                                        <span>עבודות שלי</span>
+                                        <span>ציורי נוף - שמן</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="/repertoire">
+                                        <i className=""></i> 
+                                        <span>ציורי נוף - רישומים</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="/repertoire">
+                                        <i className=""></i> 
+                                        <span>ציורי גוף</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="/bio">
+                                        <i className=""></i> 
+                                        <span>שיחות עם יוסף רולס</span>
                                     </Nav.Link>
                                 </>
                         </Nav>

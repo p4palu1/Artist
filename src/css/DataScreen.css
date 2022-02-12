@@ -6,6 +6,10 @@
   padding: 0 4px;
 }
 
+.chosen-bikoret {
+  box-shadow: 8px 8px;
+}
+
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;

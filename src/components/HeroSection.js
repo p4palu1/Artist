@@ -3,9 +3,9 @@ import '../App.css';
 import { LinkContainer } from "react-router-bootstrap"
 import { Button, Carousel } from "react-bootstrap";
 import '../css/HeroSection.css';
-import p1 from "../css/pics/2F1A6795_1.jpg"
-import p2 from "../css/pics/0D6A0092.jpg"
-import p3 from "../css/pics/0D6A9955.jpg"
+import p1 from "../css/pics/hero1.jpg"
+import p2 from "../css/pics/hero2.jpg"
+import p3 from "../css/pics/hero3.jpg"
 import p4 from "../css/pics/col5.jpg"
 import ReactDOM from "react-dom";
 
@@ -16,110 +16,195 @@ const HeroSection = () => {
     const bgs = [
       {
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
       },
       {
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
       },{
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
       },{
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
       },{
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
       },{
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
       },{
         i: p1,
-        text: 'ציורי נוף - שמן'
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
       },
       {
         i: p2,
-        text: 'ציורי נוף - רישומים'
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p3,
-        text: 'ציורי גוף'
+        text: 'ציורי גוף',
+        link: '/gallery/body'
       },
       {
         i: p4,
-        text: 'ביוגרפיה'
+        text: 'ביוגרפיה',
+        link: "/bio"
+      },{
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      {
+        i: p2,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
+      },
+      {
+        i: p3,
+        text: 'ציורי גוף',
+        link: '/gallery/body'
+      },
+      {
+        i: p4,
+        text: 'ביוגרפיה',
+        link: "/bio"
+      },{
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      {
+        i: p2,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
+      },
+      {
+        i: p3,
+        text: 'ציורי גוף',
+        link: '/gallery/body'
+      },
+      {
+        i: p4,
+        text: 'ביוגרפיה',
+        link: "/bio"
+      },{
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      {
+        i: p2,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
+      },
+      {
+        i: p3,
+        text: 'ציורי גוף',
+        link: '/gallery/body'
+      },
+      {
+        i: p4,
+        text: 'ביוגרפיה',
+        link: "/bio"
       },
     ]
 
@@ -135,7 +220,7 @@ const HeroSection = () => {
     return (
     <div className='hero-container' style={{background: `url(${bgs[bgIndex].i}) center center/cover no-repeat`, transition: 'background 0.5s ease'}}>
       <div className='hero-btns'>
-          <LinkContainer to="/repertoire" style={{backgroundColor: 'rgb( 0, 0, 0)',textDecoration: 'none', letterSpacing: '4px', fontSize: '20px'}}>
+          <LinkContainer to={bgs[bgIndex].link} style={{backgroundColor: 'rgb( 0, 0, 0)',textDecoration: 'none', letterSpacing: '4px', fontSize: '20px'}}>
             <Button style={{backgroundColor: 'rgb( 0, 0, 0)'}} variant="dark" className="btn-lg mb-5">
               {bgs[bgIndex].text} <i class="fas fa-dumbbell"></i>
             </Button>  

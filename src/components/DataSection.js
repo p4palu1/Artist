@@ -3,16 +3,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../css/DataScreen.css"
 import { Container, Image } from "react-bootstrap"
-import p1 from "../css/pics/0D6A0044.jpg"
-import p2 from "../css/pics/0D6A0060.jpg"
-import p3 from "../css/pics/0D6A0038 copy.jpg"
+import p1 from "../css/pics/bw/0D6A0044.jpg"
+import p2 from "../css/pics/bw/0D6A0060.jpg"
+import p3 from "../css/pics/bw/0D6A0038 copy.jpg"
 import p4 from "../css/pics/0D6A9955.jpg"
 import p5 from "../css/pics/0D6A0075.jpg"
 import p6 from "../css/pics/0D6A9983.jpg"
 import p7 from "../css/pics/0D6A0113.jpg"
 import p8 from "../css/pics/0D6A9985.jpg"
-import p9 from "../css/pics/0D6A9991.jpg"
-import p10 from "../css/pics/0D6A0048.jpg"
+import p9 from "../css/pics/bw/0D6A9991.jpg"
+import p10 from "../css/pics/bw/0D6A0048.jpg"
 import barel from"../css/pics/barel.jfif" 
 import eli from"../css/pics/eli.jpg" 
 import miriam from"../css/pics/miriam.jpg" 
@@ -125,7 +125,7 @@ const DataSection = () => {
             <div className="cont">
               {critics.map(c => 
                 <div onClick={() => handleGallery(c.id)} className="gallery-pic">
-                    <img src={c.photo} alt="" />
+                    <img src={c.photo} alt="" className={c.id === bikoret ? "chosen-bikoret" : ""}/>
                 </div>
                 )}
             </div>

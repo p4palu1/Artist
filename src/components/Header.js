@@ -12,7 +12,7 @@ const Header = ({history}) => {
             <Navbar bg="dark"  variant="dark" expand="lg" collapseOnSelect>
                 
                     <Container>
-                        <Navbar.Brand  href="/"><span className="h2 text-white">יוסף רולס</span></Navbar.Brand>
+                        <Navbar.Brand  href="/"><span className="h2 text-white">Yosef rolls, painter</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="ms-auto" id="basic-navbar-nav">
                         <Nav className="ms-auto">
@@ -21,19 +21,19 @@ const Header = ({history}) => {
                                         <i className=""></i> 
                                         <span>ביוגרפיה</span>
                                     </Nav.Link>
-                                    <Nav.Link href="/repertoire">
+                                    <Nav.Link href="/gallery/oil">
                                         <i className=""></i> 
-                                        <span>ציורי נוף - שמן</span>
+                                        <span>ציורי נוף-שמן</span>
                                     </Nav.Link>
-                                    <Nav.Link href="/repertoire">
+                                    <Nav.Link href="/gallery/bw">
                                         <i className=""></i> 
-                                        <span>ציורי נוף - רישומים</span>
+                                        <span>ציורי נוף-רישומים</span>
                                     </Nav.Link>
-                                    <Nav.Link href="/repertoire">
+                                    <Nav.Link href="/gallery/body">
                                         <i className=""></i> 
                                         <span>ציורי גוף</span>
                                     </Nav.Link>
-                                    <Nav.Link href="/repertoire">
+                                    <Nav.Link href="/talks">
                                         <i className=""></i> 
                                         <span>שיחות עם יוסף רולס</span>
                                     </Nav.Link>

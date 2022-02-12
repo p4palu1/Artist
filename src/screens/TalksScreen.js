@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Button, Container } from "react-bootstrap"
 import "../css/TalksScreen.css"
 import talk1 from "./talks/talk1" 
 import talk2 from "./talks/talk2" 
@@ -15,10 +16,13 @@ import talk12 from "./talks/talk12"
 import talk13 from "./talks/talk13.js" 
 import talk14 from "./talks/talk14" 
 import talk15 from "./talks/talk15" 
-import talk16 from "./talks/talk1" 
+
 
 
 const TalksScreen = () => {
+
+    const [chosen, setChosen] = useState(0)
+    
 
     const talks = [
         {
@@ -85,17 +89,26 @@ const TalksScreen = () => {
         
     ]
 
+
     return (
-        <div>
+        <Container>
             <h1 className="mt-5 mb-5">שיחות עם יוסף רולס(חוקו)</h1>
             <section>
-                {talks.map(t => 
-                    <t.talk />
-                )}
+                {
+                talks.map((t,index) => 
+                    <Button 
+                    className="m-4"set
+                    onClick={() => setChosen(index)}
+                    >{t.title} </Button>
+                )
+                }
+                
+            </section>
+            <section className="mt-5">
+                {talks.map((t,index) => index == chosen ? <t.talk /> : <></>)}
             </section>
             
-            
-        </div>
+        </Container>
     )
 }
 

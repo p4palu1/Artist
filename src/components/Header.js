@@ -12,7 +12,7 @@ const Header = ({history}) => {
             <Navbar bg="dark"  variant="dark" expand="lg" collapseOnSelect>
                 
                     <Container>
-                        <Navbar.Brand  href="/"><span className="h2 text-white">Yosef rolls, painter</span></Navbar.Brand>
+                        <Navbar.Brand  href="/"><span className="h2 text-white">Yosef rolls</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="ms-auto" id="basic-navbar-nav">
                         <Nav className="ms-auto">

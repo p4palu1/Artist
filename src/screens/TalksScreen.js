@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { Button, Container } from "react-bootstrap"
 import "../css/TalksScreen.css"
 import talk1 from "./talks/talk1" 
@@ -21,9 +21,11 @@ import talk15 from "./talks/talk15"
 
 const TalksScreen = () => {
 
+    const Myref = useRef(null, "MyRef")
     const [chosen, setChosen] = useState(0)
-    
-
+    function executeScroll(){
+        Myref.current.scrollIntoView() 
+    }
     const talks = [
         {
             title: 'איגרת הרמב"ן',
@@ -89,22 +91,27 @@ const TalksScreen = () => {
         
     ]
 
+    const HandleClick = (index) => {
+        setChosen(index)
+        executeScroll()
+    }
 
     return (
         <Container>
             <h1 className="mt-5 mb-5">שיחות עם יוסף רולס(חוקו)</h1>
+            <h5>לחץ על השיחה אותה תרצה.י לראות</h5>
             <section>
                 {
                 talks.map((t,index) => 
                     <Button 
                     className="m-4"set
-                    onClick={() => setChosen(index)}
+                    onClick={() => HandleClick(index)}
                     >{t.title} </Button>
                 )
                 }
                 
             </section>
-            <section className="mt-5">
+            <section className="mt-5" ref={Myref}>
                 {talks.map((t,index) => index == chosen ? <t.talk /> : <></>)}
             </section>
             

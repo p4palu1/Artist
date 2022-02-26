@@ -2,20 +2,20 @@ import React from 'react'
 import p1 from "../css/pics/bw/0D6A0060.jpg"
 import p2 from "../css/pics/bw/0D6A0092.jpg"
 import p3 from "../css/pics/bw/0D6A0006.jpg"
-import p4 from "../css/pics/bw/0D6A0060.jpg" // boat
+import p4 from "../css/pics/bw/boat.PNG" // boat
 import p5 from "../css/pics/bw/0D6A0009.jpg"
 import p6 from "../css/pics/bw/0D6A0004.jpg"
 import p7 from "../css/pics/bw/0D6A0012.jpg"
 import p8 from "../css/pics/bw/0D6A9992.jpg" 
 import p9 from "../css/pics/bw/0D6A0001.jpg" 
-import p10 from "../css/pics/bw/0D6A0060.jpg" // 48
+import p10 from "../css/pics/bw/48.PNG"
 import p11 from "../css/pics/bw/0D6A9994.jpg"
-import p12 from "../css/pics/bw/0D6A0060.jpg" // 50
-import p13 from "../css/pics/bw/0D6A0060.jpg" // 51
+import p12 from "../css/pics/bw/50.PNG" 
+import p13 from "../css/pics/bw/51.PNG"
 import p14 from "../css/pics/bw/0D6A0062.jpg"
 import p15 from "../css/pics/bw/0D6A0100.jpg"
-import p16 from "../css/pics/bw/0D6A0060.jpg" // 54
-import p17 from "../css/pics/bw/0D6A0060.jpg" // 55
+import p16 from "../css/pics/bw/54.PNG" 
+import p17 from "../css/pics/bw/55.PNG" 
 import p18 from "../css/pics/bw/0D6A0060.jpg" // 56
 import p19 from "../css/pics/bw/0D6A0014.jpg" 
 import p20 from "../css/pics/bw/0D6A0010.jpg"

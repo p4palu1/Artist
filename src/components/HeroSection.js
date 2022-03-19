@@ -3,15 +3,16 @@ import '../App.css';
 import { LinkContainer } from "react-router-bootstrap"
 import { Button, Carousel } from "react-bootstrap";
 import '../css/HeroSection.css';
-import p1 from "../css/pics/hero1.jpg"
-import p2 from "../css/pics/hero2.jpg"
-import p3 from "../css/pics/hero3.jpg"
+import p1 from "../css/pics/hero2w.jpg"
+import p2 from "../css/pics/hero3w.jpg"
+import p3 from "../css/pics/herobodyw.jpg"
 import p4 from "../css/pics/col5.jpg"
 import p5 from "../css/pics/hero1-small.jpg"
 import p6 from "../css/pics/hero2-small.jpg"
 import p7 from "../css/pics/hero3-small.jpg"
 import p8 from "../css/pics/col-5.jpeg"
 import ReactDOM from "react-dom";
+
 
 
 const HeroSection = () => {

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Header from "./components/Header"
 import './App.css';
 import "./bootstrap.min (8).css"
@@ -10,19 +9,21 @@ import BodyGallery from './screens/BodyGallery';
 import BWGallery from './screens/BWGallery';
 import OilGallery from './screens/OilGallery';
 import Footer from "./components/Footer"
+import React, { useState, useContext } from "react"
 
 function App() {
+
   return (
-    <Router className="App">
-      <Header />
-      <Route path="/bio" component={BioScreen} exact/>
-      <Route path="/talks" component={TalksScreen} exact/>
-      <Route path="/gallery/body" component={BodyGallery} exact/>
-      <Route path="/gallery/bw" component={BWGallery} exact/>
-      <Route path="/gallery/oil" component={OilGallery} exact/>
-      <Route path="/" component={HomeScreen} exact/>
-      <Footer />
-    </Router>
+      <Router className="App">
+        <Header />
+        <Route path="/bio" component={BioScreen} exact/>
+        <Route path="/talks" component={TalksScreen} exact/>
+        <Route path="/gallery/body" component={BodyGallery} exact/>
+        <Route path="/gallery/bw" component={BWGallery} exact/>
+        <Route path="/gallery/oil" component={OilGallery} exact/>
+        <Route path="/" component={HomeScreen} exact/>
+        <Footer />
+      </Router>
   );
 }
 

@@ -8,26 +8,7 @@ const Footer = () => {
   >
 
 
-    <div>
-      <a href="" className="me-4 text-reset">
-        <i className="fab fa-facebook-f"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fab fa-twitter"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fab fa-google"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fab fa-instagram"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fab fa-linkedin"></i>
-      </a>
-      <a href="" className="me-4 text-reset">
-        <i className="fab fa-github"></i>
-      </a>
-    </div>
+    
   </section>
 
   <section className="">
@@ -35,7 +16,7 @@ const Footer = () => {
       <div className="row mt-3">
         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h5 className="text-uppercase fw-bold mb-4 pl-2">
-            <i className="fas fa-gem me-3"></i>יוסף רולס
+            יוסף רולס
           </h5>
           <p>
             צייר ואומן אימפרסיוניסטי.
@@ -48,15 +29,13 @@ const Footer = () => {
           <h6 className="text-uppercase fw-bold mb-4">
             צרו קשר
           </h6>
-          <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
           <p>
-            <i className="fas fa-envelope me-3"></i>
-            info@example.com
+            
+            Orly@robinzone.co.il
           </p>
-          <p><i className="fas fa-phone me-3"></i><a href="https://wa.me/+972544875550">שלח הודעה</a></p>
-          <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+          <p><a style={{textDecoration: "none"}} href="https://wa.me/+972547689787">לחצו לשליחת הודעה<i class="fa fa-whatsapp"></i></a></p>
+          <p>0547689787</p>
         </div>
-
       </div>
     </div>
   </section>

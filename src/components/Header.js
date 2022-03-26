@@ -37,9 +37,9 @@ const Header = ({history}) => {
                                         <i className=""></i> 
                                         <span>שיחות עם יוסף רולס</span>
                                     </Nav.Link>
-                                    <Nav.Link href="https://wa.me/+972547689787">
+                                    <Nav.Link href=".footer">
                                         <i className=""></i> 
-                                        <span>צור קשר - אורלי</span>
+                                        <span>צור קשר</span>
                                     </Nav.Link>
                                 </>
                         </Nav>

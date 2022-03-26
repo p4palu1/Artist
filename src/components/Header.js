@@ -12,7 +12,7 @@ const Header = ({history}) => {
             <Navbar bg="dark"  variant="dark" expand="lg" collapseOnSelect>
                 
                     <Container>
-                        <Navbar.Brand  href="/"><span className="h2 text-white">Yosef rolls</span></Navbar.Brand>
+                        <Navbar.Brand href="/"><span className="h5 text-white">Yosef rolls, painter</span></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse className="ms-auto" id="basic-navbar-nav">
                         <Nav className="ms-auto">
@@ -31,11 +31,15 @@ const Header = ({history}) => {
                                     </Nav.Link>
                                     <Nav.Link href="/gallery/body">
                                         <i className=""></i> 
-                                        <span>ציורי גוף</span>
+                                        <span>ציורי גוף - שמן ורישום</span>
                                     </Nav.Link>
                                     <Nav.Link href="/talks">
                                         <i className=""></i> 
                                         <span>שיחות עם יוסף רולס</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="https://wa.me/+972547689787">
+                                        <i className=""></i> 
+                                        <span>צור קשר - אורלי</span>
                                     </Nav.Link>
                                 </>
                         </Nav>

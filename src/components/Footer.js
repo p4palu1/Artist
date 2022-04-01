@@ -31,7 +31,7 @@ const Footer = () => {
           </h6>
           <p>
             
-            Orly@robinzone.co.il
+            <a href="mailto:Orly@robinzone.co.il">Orly@robinzone.co.il</a>
           </p>
           <p>לכל עניין ובקשה, אורלי בתו של יוסף תשמח לעזור :)</p>
           <p><a style={{textDecoration: "none"}} href="https://wa.me/+972547689787">לחצו לשליחת הודעה <i class="fa fa-whatsapp"></i></a></p>

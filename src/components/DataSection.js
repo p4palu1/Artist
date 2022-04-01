@@ -8,15 +8,17 @@ import p2 from "../css/pics/newoil1.jpeg"
 import p3 from "../css/pics/bw/0D6A0038 copy.jpg"
 import p4 from "../css/pics/0D6A9955.jpg"
 // --> 
-import p5 from "../css/pics/0D6A0075.jpg"
+import p5 from "../css/pics/2F1A6831_1.jpg"
 // -->
-import p6 from "../css/pics/0D6A9983.jpg"
+//
+import p6 from "../css/pics/2F1A6779_1.jpg"
 // -->
 import p7 from "../css/pics/newoil2.jpeg"
 import p8 from "../css/pics/0D6A9985.jpg"
 // -->
 import p9 from "../css/pics/newoil3.jpeg"
-import p10 from "../css/pics/bw/0D6A0048.jpg"
+//
+import p10 from "../css/pics/2F1A6787.jpg"
 import barel from"../css/pics/barel.jfif" 
 import eli from"../css/pics/eli.jpg" 
 import miriam from"../css/pics/miriam.jpg" 

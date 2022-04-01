@@ -92,15 +92,15 @@ const DataSection = () => {
             <div className=" row mt-5 mb-5" data-aos="zoom-in-up">
               <div className="column">
                 <img src={p1}/>
-                <img src={p2}/>
-              </div>
-              <div className="column">
-                <img src={p3}/>
-                <img src={p4}/>
+                
               </div>
               <div className="column">
                 <img src={p5}/>
                 <img src={p6}/>
+              </div>
+              <div className="column">
+                <img src={p2}/>
+                <img src={p4}/>
               </div>
             </div>
 

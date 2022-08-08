@@ -51,14 +51,18 @@ const Slides = ({photos}) => {
         setGaldisplay("flex")
     }
     
-    return <div className="slides" style={{display: display}}>
+    return <div style={{display: display == "none" ? "none": ""}}>
+        <div className="slides" style={{display: display}}>
             <FontAwesomeIcon icon={faCircleXmark} onClick={() => exit()}/>
                 <div className="outer" >
                         <FontAwesomeIcon classname="arrow left" icon={faArrowLeft} onClick={() => handleLeft()}/>
-                            <img src={photos[pindex]} height="600px" />
+                            <img src={photos[pindex].image} height="600px" />
                         <FontAwesomeIcon classname="arrow right" icon={faArrowRight} onClick={() => handleRight()}/>
                 </div>
+                
             </div>
+            <h1 className="text-center " dir="rtl">{photos[pindex].text}</h1>
+        </div>
                 
 };
 

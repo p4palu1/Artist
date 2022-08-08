@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext} from 'react'
+import React, { useState, useRef, useContext, useCallback } from 'react'
 import p1 from "../css/pics/bw/0D6A0060.jpg"
 import p2 from "../css/pics/bw/0D6A0092.jpg"
 import p3 from "../css/pics/bw/0D6A0006.jpg"
@@ -39,7 +39,6 @@ import p37 from "../css/pics/bw/z7.jpeg"
 
 
 
-
 import Slides from "../components/Slides"
 import { IndexContext } from "./context.js"
 
@@ -67,6 +66,9 @@ const BWGallery = () => {
         setDisplay("flex")
         setGaldisplay("none")
         executeScroll()
+        }
+        else{
+
         }
     }
 

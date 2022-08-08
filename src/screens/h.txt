@@ -1,0 +1,18 @@
+import m5 from "../css/pics/oil/m5.png"
+import m10 from "../css/pics/oil/m10.png"
+import m11 from "../css/pics/oil/m11.png"
+import m17 from "../css/pics/oil/m17.png"
+import m18 from "../css/pics/oil/m18.png"
+import m19 from "../css/pics/oil/m19.png"
+import m20 from "../css/pics/oil/m20.png"
+import m21 from "../css/pics/oil/m21.png"
+import m23 from "../css/pics/oil/m23.png"
+import m24 from "../css/pics/oil/m24.png"
+import m25 from "../css/pics/oil/m25.png"
+import m26 from "../css/pics/oil/m26.png"
+import m32 from "../css/pics/oil/m32.png"
+import m33 from "../css/pics/oil/m33.png"
+import m37 from "../css/pics/oil/m37.png"
+
+
+    const photos = [{image:p1, text: "hello"}, {image:p2, text: "אום ג'וני והירדן בדגניה א'"}, {image:p3, text: "מבט על הרי יהודה"}, {image:p4, text: "סמטת מצודת דוד"}, {image:p5, text: "הירקון ברמת גן"}, {image:p6, text: "מצוק ארבל"}, {image:p7, text: "חוף הכנרת"}, {image:p8, text: ""}, {image:p9, text: "צפון עמק הירדן והכנרת"}, {image:p10, text: "פרש במטע זיתים"}, {image:p11, text: ""}, {image:p12, text: "דרך מצודת דוד בירושלים"}, {image:p13, text: "מבט על הכינרת מקיבוץ דגניה א'"}, {image:p14, text: ""}, {image:p15, text: "הר החרמון"}, {image:p16, text: ""}, {image:p17, text: "פרש במטע זיתים"}, {image:p18, text: ""}, {image:p19, text: ""}, {image:p20, text: ""}, {image:p21, text: ""}, {image:p22, text: "הדרך אל מצוק ארבל"}, {image:p23, text: "סירות מפרש בסמוך לחוף דור"}, {image:p24, text: ""}, {image:p25, text: ""}, {image:p27, text: "חוף יפו בלילה"}, {image:p27, text: ""}, {image:p28, text: ""}, {image:p29, text: ""}, {image:p30, text: ""}, {image:p31, text: "מבט ממטולה על אצבע הגליל"}, {image:p32, text: ""}, {image:p33, text: ""}, {image:p34, text: ""}, {image:p35, text: "מבט על הגלבוע משדות עין חרוד"}, {image:p36, text: ""}, {image:p37, text: ""}, {image:p38, text: "עץ בודד בסמוך לרמת ישי"}, {image:p39, text: "תחילת רכס הכרמל"}, {image:p40, text: ""}, {image:p41, text: "אבן האוהבים ליד חוף קיבוץ געש"}, {image:p42, text: "חוף קיבוץ געש"}, {image:p43, text: "מצודת דוד וחומת ירושלים"}, {image:p44, text: ""}, {image:p45, text: ""}]

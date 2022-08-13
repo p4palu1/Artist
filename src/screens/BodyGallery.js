@@ -22,7 +22,7 @@ import { IndexContext } from "./context.js"
 
 
 const BodyGallery = () => {
-    const photos = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18]
+    const photos = [{image:p1}, {image:p2}, {image:p3}, {image:p4}, {image:p5}, {image:p6}, {image:p7}, {image:p8}, {image:p9}, {image:p10}, {image:p11}, {image:p12}, {image:p13}, {image:p14}, {image:p15}, {image:p16}, {image:p17}, {image:p18}]
     const [display, setDisplay] = useState("none")
     const [pindex, setPindex] = useState(0)
     const [galdisplay, setGaldisplay] = useState("")

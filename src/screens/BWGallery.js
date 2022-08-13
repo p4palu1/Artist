@@ -36,7 +36,25 @@ import p34 from "../css/pics/bw/0D6A0047.jpg"
 import p35 from "../css/pics/bw/0D6A0056.jpg" 
 import p36 from "../css/pics/bw/w6.jpeg" 
 import p37 from "../css/pics/bw/z7.jpeg" 
+import p38 from "../css/pics/bw/072.png" 
+import p39 from "../css/pics/bw/o43.png" 
+import p40 from "../css/pics/bw/o44.png" 
+import p41 from "../css/pics/bw/o45.png" 
+import p42 from "../css/pics/bw/o56.png" 
+import p43 from "../css/pics/bw/o57.png" 
+import p44 from "../css/pics/bw/o61.png" 
+import p45 from "../css/pics/bw/o67.png" 
+import p46 from "../css/pics/bw/o68.png" 
+import p47 from "../css/pics/bw/o69.png" 
+import p48 from "../css/pics/bw/o73.png" 
+import p49 from "../css/pics/bw/o76.png" 
+import p50 from "../css/pics/bw/o79.png" 
+import p51 from "../css/pics/bw/o82.png" 
+import p52 from "../css/pics/bw/o46.png" 
+import p53 from "../css/pics/bw/o86.png" 
 
+
+ 
 
 
 import Slides from "../components/Slides"
@@ -50,7 +68,7 @@ import { IndexContext } from "./context.js"
 
 const BWGallery = () => {
 
-    const photos = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37]
+    const photos = [{image:p1, text:"רכס ארבל מבט אל הכנרת"}, {image:p2, text:"הירדן בעמק החולה"}, {image:p3, text:"סירות דייגים בחוף יפו"}, {image:p4, text:"סירת דייג בחוף נמל חיפה"}, {image:p5, text:"תחנת הרכבת קרית מוצקין"}, {image:p6, text:"גשרון בעמק יזרעאל"}, {image:p7, text:"עץ מחט בעמק זבולון"}, {image:p8, text:"מטע זיתים ליד כרמיאל"}, {image:p9, text:"בוסתן בעמק על יד כרמיאל"}, {image:p10, text:"עץ אלה בסמוך לכרמיאל"}, {image:p11, text:"עץ זית בעמק יזרעאל"}, {image:p12, text:"עץ אלה בסמוך לכרמיאל"}, {image:p13, text:""}, {image:p14, text:"מקטע חורש בגליל המערבי"}, {image:p15, text:"בניית סוכה בשכונת ימין משה בירושלים"}, {image:p16, text:"היכל הסםר מוזיאון ישראל ירושלים"}, {image:p17, text:"מקטע חורש בכרמל"}, {image:p18, text:"אילת הים האדום"}, {image:p19, text:"מבט אל זיכרון יעקב ממצפה עופר"}, {image:p20, text:"גשרון בירקון ברמת גן"}, {image:p21, text:"סירת משוטים בירקון ברמת גן"}, {image:p22, text:"ספסל בגן ברמת גן"}, {image:p23, text:"מקטע נוף במורדות הכרמל"}, {image:p24, text:""}, {image:p25, text:"עצי זית עתיקים במבואות ירושלים"}, {image:p26, text:"שער יפו וחומת ירושלים"}, {image:p27, text:"הכותל המערבי"}, {image:p28, text:"כנסת ישראל בירושלים"}, {image:p29, text:"עיר דוד ירושלים"}, {image:p30, text:"בית הכנסת החורבה בירושלים"}, {image:p31, text:"תחנת הקמח בשכונת מונטיפיורי"}, {image:p32, text:""}, {image:p33, text:""}, {image:p34, text:"רחוב המדרגות היורדות ימין משה ירושלים"}, {image:p35, text:"רחוב המדרגות היורדות שכונת ימין משה ירושלים"}, {image:p36, text:"נוף מעבר לירקון ברמת גן"}, {image:p37, text:""},{image:p38, text:""},{image:p39, text:"צריפון דייגים ליד הכנרת"},{image:p40, text:"צריף דייגים בטבריה"},{image:p41, text:"צפון הכנרת"},{image:p42, text:"איכר חורש במטע זיתים"},{image:p43, text:"שביל הליכה בגליל המערבי"},{image:p44, text:""},{image:p45, text:"המסגד בגבול תל אביב יפו"},{image:p46, text:""},{image:p47, text:"מצודת דוד בירושלים"},{image:p48, text:"מצודת דוד ומקטע של חומת ירושלים"},{image:p49, text:"בית סוהר האסירים בתקופת המנדט הבריטי"},{image:p50, text:"תעלת התחמושת בירושלים"},{image:p51, text:"אגנית האבן שכונת ימין משה ירושלים"},{image:p52, text:"אום ג'וני בדגניה א'"}, {image: p53, text: "מצדה וים המלח"}]
     const [display, setDisplay] = useState("none")
     const [pindex, setPindex] = useState(0)
     const [galdisplay, setGaldisplay] = useState("")
@@ -81,27 +99,35 @@ const BWGallery = () => {
                 <div className="column">
                     <img src={p6} onClick={() => changeDisplay(6)}/>
                     <img src={p9} onClick={() => changeDisplay(9)}/>
-                    <img src={p13} onClick={() => changeDisplay(13)}/>
+                    
                     <img src={p17} onClick={() => changeDisplay(17)}/>
                     <img src={p21} onClick={() => changeDisplay(21)}/>
                     <img src={p25} onClick={() => changeDisplay(25)}/>
                     <img src={p33} onClick={() => changeDisplay(33)}/>
                     <img src={p37} onClick={() => changeDisplay(37)}/>
+                    
+                    <img src={p42} onClick={() => changeDisplay(42)}/>
                     <img src={p35} onClick={() => changeDisplay(35)}/>
+                    <img src={p50} onClick={() => changeDisplay(50)}/>
+                   
 
 
                 </div>
                 <div className="column">
                     <img src={p2} onClick={() => changeDisplay(2)}/>
                     <img src={p1} onClick={() => changeDisplay(1)}/>
-                    <img src={p10} onClick={() => changeDisplay(10)}/>
+                    
                     <img src={p14} onClick={() => changeDisplay(14)}/>
-                    <img src={p18} onClick={() => changeDisplay(18)}/>
                     <img src={p22} onClick={() => changeDisplay(22)}/>
                     <img src={p26} onClick={() => changeDisplay(26)}/>
                     <img src={p30} onClick={() => changeDisplay(30)}/>
                     <img src={p34} onClick={() => changeDisplay(34)}/>
-
+                    <img src={p39} onClick={() => changeDisplay(39)}/>
+                    <img src={p43} onClick={() => changeDisplay(43)}/>
+                    <img src={p46} onClick={() => changeDisplay(46)}/>
+                    <img src={p49} onClick={() => changeDisplay(49)}/>
+                    <img src={p18} onClick={() => changeDisplay(18)}/>
+                    <img src={p53} onClick={() => changeDisplay(53)}/>
                 </div>
                 <div className="column">
                     <img src={p3} onClick={() => changeDisplay(3)}/>
@@ -113,7 +139,10 @@ const BWGallery = () => {
                     <img src={p27} onClick={() => changeDisplay(27)}/>
                     <img src={p31} onClick={() => changeDisplay(31)}/>
                     <img src={p20} onClick={() => changeDisplay(20)}/>
-
+                    <img src={p40} onClick={() => changeDisplay(40)}/>
+                    <img src={p44} onClick={() => changeDisplay(44)}/>
+                    <img src={p47} onClick={() => changeDisplay(47)}/>
+                    
                 </div>
                 <div className="column">
                     <img src={p4} onClick={() => changeDisplay(4)}/>
@@ -126,6 +155,11 @@ const BWGallery = () => {
                     <img src={p36} onClick={() => changeDisplay(36)}/>
                     <img src={p5} onClick={() => changeDisplay(5)}/>
                     <img src={p29} onClick={() => changeDisplay(29)}/>
+                    <img src={p41} onClick={() => changeDisplay(41)}/>
+                    <img src={p45} onClick={() => changeDisplay(45)}/>
+                    <img src={p48} onClick={() => changeDisplay(48)}/>
+                    <img src={p51} onClick={() => changeDisplay(51)}/>
+                    <img src={p52} onClick={() => changeDisplay(52)}/>
                     
 
                 </div>

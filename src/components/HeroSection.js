@@ -11,6 +11,7 @@ import p5 from "../css/pics/hero1-small.jpg"
 import p6 from "../css/pics/hero2-small.jpg"
 import p7 from "../css/pics/hero3-small.jpg"
 import p8 from "../css/pics/col-5.jpeg"
+import p9 from "../css/pics/bw/0D6A0016.jpg"
 import ReactDOM from "react-dom";
 
 
@@ -20,15 +21,16 @@ const HeroSection = () => {
     const [bgIndex, setBgIndex] = useState(0)
     const bgs = [
       {
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
+      {
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -40,34 +42,16 @@ const HeroSection = () => {
         link: "/bio"
       },
       {
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
       {
-        i: p3,
-        text: 'ציורי גוף',
-        link: '/gallery/body'
-      },
-      {
-        i: p4,
-        text: 'ביוגרפיה',
-        link: "/bio"
-      },{
         i: p1,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
       },
-      {
-        i: p2,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
-      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -78,15 +62,16 @@ const HeroSection = () => {
         text: 'ביוגרפיה',
         link: "/bio"
       },{
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
+      {
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -97,15 +82,16 @@ const HeroSection = () => {
         text: 'ביוגרפיה',
         link: "/bio"
       },{
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
+      {
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -116,15 +102,16 @@ const HeroSection = () => {
         text: 'ביוגרפיה',
         link: "/bio"
       },{
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
+      {
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -135,15 +122,16 @@ const HeroSection = () => {
         text: 'ביוגרפיה',
         link: "/bio"
       },{
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
+      {
+        i: p1,
+        text: 'ציורי נוף - שמן',
+        link: '/gallery/oil'
+      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -154,53 +142,16 @@ const HeroSection = () => {
         text: 'ביוגרפיה',
         link: "/bio"
       },{
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
         i: p2,
         text: 'ציורי נוף - רישומים',
         link: '/gallery/bw'
       },
       {
-        i: p3,
-        text: 'ציורי גוף',
-        link: '/gallery/body'
-      },
-      {
-        i: p4,
-        text: 'ביוגרפיה',
-        link: "/bio"
-      },{
         i: p1,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
       },
-      {
-        i: p2,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
-      },
-      {
-        i: p3,
-        text: 'ציורי גוף',
-        link: '/gallery/body'
-      },
-      {
-        i: p4,
-        text: 'ביוגרפיה',
-        link: "/bio"
-      },{
-        i: p1,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
-        i: p2,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
-      },
+      
       {
         i: p3,
         text: 'ציורי גוף',
@@ -214,15 +165,15 @@ const HeroSection = () => {
     ]
 
     const bgsSmall = [
+       {
+        i: p9,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
+      },
       {
         i: p5,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
       },
       {
         i: p7,
@@ -235,14 +186,14 @@ const HeroSection = () => {
         link: "/bio"
       },
       {
+        i: p9,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
+      },
+      {
         i: p5,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
       },
       {
         i: p7,
@@ -253,16 +204,15 @@ const HeroSection = () => {
         i: p8,
         text: 'ביוגרפיה',
         link: "/bio"
+      },{
+        i: p9,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p5,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
       },
       {
         i: p7,
@@ -273,16 +223,15 @@ const HeroSection = () => {
         i: p8,
         text: 'ביוגרפיה',
         link: "/bio"
+      },{
+        i: p9,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p5,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
       },
       {
         i: p7,
@@ -293,16 +242,15 @@ const HeroSection = () => {
         i: p8,
         text: 'ביוגרפיה',
         link: "/bio"
+      },{
+        i: p9,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p5,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
       },
       {
         i: p7,
@@ -313,56 +261,15 @@ const HeroSection = () => {
         i: p8,
         text: 'ביוגרפיה',
         link: "/bio"
+      },{
+        i: p9,
+        text: 'ציורי נוף - רישומים',
+        link: '/gallery/bw'
       },
       {
         i: p5,
         text: 'ציורי נוף - שמן',
         link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
-      },
-      {
-        i: p7,
-        text: 'ציורי גוף',
-        link: '/gallery/body'
-      },
-      {
-        i: p8,
-        text: 'ביוגרפיה',
-        link: "/bio"
-      },
-      {
-        i: p5,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
-      },
-      {
-        i: p7,
-        text: 'ציורי גוף',
-        link: '/gallery/body'
-      },
-      {
-        i: p8,
-        text: 'ביוגרפיה',
-        link: "/bio"
-      },
-      {
-        i: p5,
-        text: 'ציורי נוף - שמן',
-        link: '/gallery/oil'
-      },
-      {
-        i: p6,
-        text: 'ציורי נוף - רישומים',
-        link: '/gallery/bw'
       },
       {
         i: p7,

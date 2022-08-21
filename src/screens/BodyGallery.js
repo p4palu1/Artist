@@ -19,25 +19,40 @@ import p17 from "../css/pics/body/0D6A9983.jpg"
 import p18 from "../css/pics/body/a1.jfif"
 import Slides from "../components/Slides"
 import { IndexContext } from "./context.js"
+import "../css/Gallery.css"
 
+
+const delay = ms => new Promise(
+  resolve => setTimeout(resolve, ms)
+);
 
 const BodyGallery = () => {
     const photos = [{image:p1}, {image:p2}, {image:p3}, {image:p4}, {image:p5}, {image:p6}, {image:p7}, {image:p8}, {image:p9}, {image:p10}, {image:p11}, {image:p12}, {image:p13}, {image:p14}, {image:p15}, {image:p16}, {image:p17}, {image:p18}]
     const [display, setDisplay] = useState("none")
     const [pindex, setPindex] = useState(0)
     const [galdisplay, setGaldisplay] = useState("")
+    const [photoName, setPhotoName] = useState("")
+    const [photoNameDisplay, setPhotoNameDisplay] = useState("none")
 
     const myRef = useRef(null)
 
     const executeScroll = () =>{
         myRef.current.scrollIntoView({ block: 'end', behavior: 'smooth' }) 
     }
-    const changeDisplay = (indexx) => {
+      const changeDisplay = async (indexx) => {
         if(window.innerWidth > 900){
         setPindex(indexx - 1)
         setDisplay("flex")
         setGaldisplay("none")
         executeScroll()
+        }
+        else{
+            setPhotoName(photos[indexx-1].text)
+            setPhotoNameDisplay("")
+            await delay(5000)
+            setPhotoNameDisplay("none")
+            
+            
         }
     }
 
@@ -47,7 +62,7 @@ const BodyGallery = () => {
         <IndexContext.Provider value={{pindex, setPindex, display, setDisplay, setGaldisplay, galdisplay}}>
             <span ref={myRef}></span>
             <Slides photos={photos} />
-
+            <div style={{ display: photoNameDisplay}} className="name-bar">{photoName}</div>
             <div className=" row mb-5" style={{marginLeft: "20px", marginRight: "20px", display: galdisplay}}>
                     <div className="column">
                     <img src={p15} onClick={() => changeDisplay(15)}/>

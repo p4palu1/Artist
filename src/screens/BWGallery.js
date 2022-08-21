@@ -52,6 +52,7 @@ import p50 from "../css/pics/bw/o79.png"
 import p51 from "../css/pics/bw/o82.png" 
 import p52 from "../css/pics/bw/o46.png" 
 import p53 from "../css/pics/bw/o86.png" 
+import "../css/Gallery.css"
 
 
  
@@ -64,7 +65,9 @@ import { IndexContext } from "./context.js"
 
 
 
-
+const delay = ms => new Promise(
+  resolve => setTimeout(resolve, ms)
+);
 
 const BWGallery = () => {
 
@@ -72,13 +75,14 @@ const BWGallery = () => {
     const [display, setDisplay] = useState("none")
     const [pindex, setPindex] = useState(0)
     const [galdisplay, setGaldisplay] = useState("")
-
+    const [photoName, setPhotoName] = useState("")
+    const [photoNameDisplay, setPhotoNameDisplay] = useState("none")
     const myRef = useRef(null)
 
     const executeScroll = () =>{
         myRef.current.scrollIntoView({ block: 'end', behavior: 'smooth' }) 
     }
-    const changeDisplay = (indexx) => {
+       const changeDisplay = async (indexx) => {
         if(window.innerWidth > 900){
         setPindex(indexx - 1)
         setDisplay("flex")
@@ -86,7 +90,12 @@ const BWGallery = () => {
         executeScroll()
         }
         else{
-
+            setPhotoName(photos[indexx-1].text)
+            setPhotoNameDisplay("")
+            await delay(5000)
+            setPhotoNameDisplay("none")
+            
+            
         }
     }
 
@@ -95,6 +104,8 @@ const BWGallery = () => {
             <IndexContext.Provider value={{pindex, setPindex, display, setDisplay, setGaldisplay, galdisplay}}>
                     <span ref={myRef}></span>
                     <Slides photos={photos}/>
+            <div style={{ display: photoNameDisplay}} className="name-bar">{photoName}</div>
+
                 <div className=" row mb-5" style={{marginLeft: "20px", marginRight: "20px", display: galdisplay}}>
                 <div className="column">
                     <img src={p6} onClick={() => changeDisplay(6)}/>

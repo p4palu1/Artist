@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react'
+import React, { useState, useRef, useCallback, useEffect } from 'react'
 import p1 from "../css/pics/oil/2F1A6779_1.jpg"
 import p2 from "../css/pics/oil/2F1A6786_1.jpg"
 import p3 from "../css/pics/oil/2F1A6787.jpg"
@@ -49,13 +49,16 @@ import p45 from "../css/pics/oil/m37.png"
 import Slides from "../components/Slides"
 import { IndexContext } from "./context.js"
 import { useLongPress, LongPressDetectEvents } from "use-long-press";
-
+import "../css/Gallery.css"
 
 // turn [photos] into an array of objects with an attribute of photo anf
 
 // add m4 m29 m35!!!!!!!!!!
 
 // name on mobile!!!
+const delay = ms => new Promise(
+  resolve => setTimeout(resolve, ms)
+);
 const OilGallery = () => {
 
     const photos = [{image:p1, text: ""}, {image:p2, text: "אום ג'וני והירדן בדגניה א'"}, {image:p3, text: "מבט על הרי יהודה"}, {image:p4, text: "סמטת מצודת דוד"}, {image:p5, text: "הירקון ברמת גן"}, {image:p6, text: "מצוק ארבל"}, {image:p7, text: "חוף הכנרת"}, {image:p8, text: "הירדן למרגלות קיבוץ אלומות"}, {image:p9, text: "צפון עמק הירדן והכנרת"}, {image:p10, text: "פרש במטע זיתים"}, {image:p11, text: "הר מירון מעל מושב ספסופה"}, {image:p12, text: "דרך מצודת דוד בירושלים"}, {image:p13, text: "מבט על הכינרת מקיבוץ דגניה א'"}, {image:p14, text: ""}, {image:p15, text: "הר החרמון"}, {image:p16, text: "שפך הכנרת לירדן"}, {image:p17, text: "פרש במטע זיתים"}, {image:p18, text: ""}, {image:p19, text: ""}, {image:p20, text: ""}, {image:p21, text: ""}, {image:p22, text: "הדרך אל מצוק ארבל"}, {image:p23, text: "סירות מפרש בסמוך לחוף דור"}, {image:p24, text: ""}, {image:p25, text: ""}, {image:p27, text: ""}, {image:p27, text: ""}, {image:p28, text: "מבט אל טבריה וצפון הכנרת ממצפה כנרת"}, {image:p29, text: "מבט להר מירון מגוש חלב"}, {image:p30, text: "חוף יפו בלילה"}, {image:p31, text: "מבט ממטולה על אצבע הגליל"}, {image:p32, text: "מגדל דוד בצהוב"}, {image:p33, text: "מגדל דוד בירוק"}, {image:p34, text: ""}, {image:p35, text: "מבט על הגלבוע משדות עין חרוד"}, {image:p36, text: ""}, {image:p37, text: ""}, {image:p38, text: "עץ בודד בסמוך לרמת ישי"}, {image:p39, text: "תחילת רכס הכרמל"}, {image:p40, text: ""}, {image:p41, text: "אבן האוהבים ליד חוף קיבוץ געש"}, {image:p42, text: "חוף קיבוץ געש"}, {image:p43, text: "מצודת דוד וחומת ירושלים"}, {image:p44, text: ""}, {image:p45, text: "מצודת דוד באדום"}]
@@ -64,7 +67,8 @@ const OilGallery = () => {
     const [display, setDisplay] = useState("none")
     const [pindex, setPindex] = useState(0)
     const [galdisplay, setGaldisplay] = useState("")
-
+    const [photoName, setPhotoName] = useState("")
+    const [photoNameDisplay, setPhotoNameDisplay] = useState("none")
     const myRef = useRef(null)
 
     const executeScroll = () =>{
@@ -87,12 +91,22 @@ const OilGallery = () => {
     detect: LongPressDetectEvents.BOTH
   });
 
-    const changeDisplay = (indexx) => {
+  
+
+    const changeDisplay = async (indexx) => {
         if(window.innerWidth > 900){
         setPindex(indexx - 1)
         setDisplay("flex")
         setGaldisplay("none")
         executeScroll()
+        }
+        else{
+            setPhotoName(photos[indexx-1].text)
+            setPhotoNameDisplay("")
+            await delay(5000)
+            setPhotoNameDisplay("none")
+            
+            
         }
     }
 
@@ -100,6 +114,7 @@ const OilGallery = () => {
         <IndexContext.Provider value={{pindex, setPindex, display, setDisplay, setGaldisplay, galdisplay}}>
             <span ref={myRef}></span>
             <Slides photos={photos} />
+            <div style={{ display: photoNameDisplay}} className="name-bar">{photoName}</div>
             <div className=" row mb-5" style={{marginLeft: "20px", marginRight: "20px", display: galdisplay}}>
                 <div className="column">
                     <img src={p15} onClick={() => changeDisplay(15)}/>
